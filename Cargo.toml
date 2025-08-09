@@ -1,0 +1,45 @@
+[package]
+name = "gfr"
+version = "1.0.0"
+edition = "2021"
+authors = ["Krishna Agarwal <kr1shna4garwal@proton.me>"]
+description = "A blazingly-fast, Rust tool for finding patterns in code, inspired by 'gf'."
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+# Core application framework
+anyhow = "1.0.86"
+
+# Command-line argument parsing
+clap = { version = "4.5.4", features = ["derive"] }
+
+# Serialization and deserialization for pattern files
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
+
+# Cross-platform directory handling
+dirs = "5.0.1"
+
+# Terminal output styling
+owo-colors = "4.0.0"
+
+# High-performance directory traversal and file searching (ripgrep's core)
+ignore = "0.4.22"
+grep-matcher = "0.1.7"
+grep-printer = "0.2.2"
+grep-regex = "0.1.13"
+grep-searcher = "0.1.14"
+termcolor = "1.1.0"
+
+# Check if stdin is a pipe
+atty = "0.2.14"
+tempfile = "3.20.0"
+
+# Release Profile for maximum performance
+[profile.release]
+lto = true          # Enable Link-Time Optimization for better performance
+codegen-units = 1   # Produce a single compilation unit for max optimization
+panic = "abort"     # Abort on panic for smaller binaries
+strip = true        # Strip debug symbols from the binary
+opt-level = 3       # Maximum optimization level

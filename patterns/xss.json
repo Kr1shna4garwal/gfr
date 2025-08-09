@@ -1,0 +1,17 @@
+{
+  "description": "Finds common Cross-Site Scripting (XSS) sinks in code.",
+  "patterns": [
+    "innerHTML",
+    "outerHTML",
+    "document.write",
+    "eval\\("
+  ],
+  "ignore_case": true,
+  "file_types": [
+    "js",
+    "html",
+    "jsx",
+    "tsx",
+    "vue"
+  ]
+}
