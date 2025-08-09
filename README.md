@@ -153,21 +153,27 @@ A `gfr` pattern is a simple JSON file, just like the gf patterns. Here is a exam
 ## FAQ
 
 **Q:** Why do we need another such tool when one already exists?
+
 **A:** I made this as side project, gf is awesome, I used it a lot in early days, but now, I feel it a bit backward and slow. So I made this.
 
 **Q:** How can I create my own patterns index?
+
 **A:** See https://github.com/Kr1shna4garwal/gfr-patterns
 
 **Q:** I don't understand regex, I have target specific search candidates, what to do now? 🙁
+
 **A:** No problem, You can use https://regex.fav83.com, It allows you to generate regex patterns using LLM quickly. More better, try learning regex, I know regex sucks, but it's not rocket science :)
 
 **Q:** gfr?
+
 **A:** grep-find-rust
 
 **Q:** I wish to contribute patterns to default index
+
 **A:** You can contribute to default index, Please check https://github.com/kr1shna4garwal/gfr-patterns/blob/main/CONTRIBUTING.md :)
 
 **Q:** I got a question for you, can I ask personally?
+
 **A:** Yes, you can contact me at https://kr1shna4garwal.com/contact
 
 ## Contribution
