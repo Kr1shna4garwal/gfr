@@ -21,7 +21,7 @@
 
 Built on the high-performance core of `ripgrep`, `gfr` is designed for speed and efficiency.
 
----
+
 
 ## Features
 
@@ -32,7 +32,7 @@ Built on the high-performance core of `ripgrep`, `gfr` is designed for speed and
 -   **Stdin & File Support**: Pipe output from other tools or search directories directly.
 -   **Customizable**: Easily create and save your own patterns with `gfr save`.
 
----
+
 
 ## Installation
 
@@ -61,7 +61,7 @@ cargo install --path .
 gfr --version
 ```
 
----
+
 
 ## Usage
 
@@ -118,7 +118,7 @@ gfr --help
 gfr search --help
 ```
 
----
+
 
 ## Pattern File Structure
 
@@ -148,7 +148,7 @@ A `gfr` pattern is a simple JSON file, just like the gf patterns. Here is a exam
 -   **`ignore_case`**: (Optional `bool`) Enables case-insensitive matching.
 -   **`multiline`**: (Optional `bool`) Enables regex `.` to match newlines.
 
----
+
 
 ## FAQ
 
