@@ -170,7 +170,7 @@ A `gfr` pattern is a simple JSON file, just like the gf patterns. Here is a exam
 
 **Q:** I wish to contribute patterns to default index
 
-**A:** You can contribute to default index, Please check https://github.com/kr1shna4garwal/gfr-patterns/blob/main/CONTRIBUTING.md :)
+**A:** You can contribute to default index, Please check https://github.com/Kr1shna4garwal/gfr-patterns/tree/main?tab=readme-ov-file#contributing :)
 
 **Q:** I got a question for you, can I ask personally?
 
