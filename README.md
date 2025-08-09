@@ -1,9 +1,21 @@
 # gfr: Grep-Find-Rust ⚡
 
+<div align="center">
+  <img src="static/gfr_logo.jpg" alt="gfr Logo" width="200"/>
+</div>
+
+<div align="center">
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Crates.io](https://img.shields.io/crates/v/gfr.svg)](https://crates.io/crates/gfr)
 [![Build Status](https://github.com/Kr1shna4garwal/gfr/workflows/Build%20and%20Release%20gfr/badge.svg)](https://github.com/Kr1shna4garwal/gfr/actions)
 [![Rust](https://img.shields.io/badge/rust-1.88%2B-brightgreen.svg)](https://www.rust-lang.org)
+
+</div>
+
+<div align="center">
+  <img src="static/gfr_demo.gif" alt="gfr Demo" width="600"/>
+</div>
 
 **`gfr`** is a blazingly-fast, pure Rust command-line tool for finding patterns in your code, inspired by `gf` (https://github.com/tomnomnom/gf). It leverages pre-defined, community-contributed, or your own custom JSON pattern files to rapidly scan for anything.
 
