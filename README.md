@@ -214,3 +214,9 @@ I welcome contributions from the community to make **\[gfr]** better.
 ## License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+---
+
+<div align="center">
+  <sub>Powered by Caffeine and Creativity</sub>
+</div>
