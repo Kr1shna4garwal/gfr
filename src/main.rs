@@ -41,7 +41,8 @@ fn get_color_specs() -> ColorSpecs {
 
 const CONFIG_DIR: &str = "gfr";
 const INSTALLED_MANIFEST_FILE: &str = "installed.json";
-const DEFAULT_PATTERNS_URL: &str = "https://raw.githubusercontent.com/Kr1shna4garwal/ghr-patterns/refs/heads/main/index.json?token=GHSAT0AAAAAADIYL36MVPOUAO2Q4ENBSGPI2EXARXA";
+const DEFAULT_PATTERNS_URL: &str =
+    "https://raw.githubusercontent.com/Kr1shna4garwal/ghr-patterns/refs/heads/main/index.json";
 const DEFAULT_PATTERN_SCHEMA_URL: &str = "https://raw.githubusercontent.com/Kr1shna4garwal/ghr-patterns/refs/heads/main/schemas/pattern.schema.json";
 
 #[derive(Parser, Debug)]
@@ -56,7 +57,7 @@ struct Cli {
 enum Commands {
     /// Search for patterns in files or stdin.
     Search {
-        /// The name of the pattern to search for (e.g., "go_rce", "ipv4")
+        /// The name of the pattern to search for (e.g., "rce", "ipv4")
         pattern_name: Option<String>,
 
         /// File or directory path to search. Defaults to current directory.
@@ -630,12 +631,15 @@ fn find_patterns_by_filter(
 
     for entry in fs::read_dir(pattern_dir)?.filter_map(Result::ok) {
         let path: PathBuf = entry.path();
-        if path.extension().is_some_and(|e: &std::ffi::OsStr| e == "json")
+        if path
+            .extension()
+            .is_some_and(|e: &std::ffi::OsStr| e == "json")
             && entry.file_name().to_str() != Some(INSTALLED_MANIFEST_FILE)
         {
             if let Some(name) = path.file_stem().and_then(std::ffi::OsStr::to_str) {
                 if let Ok(p) = load_pattern(name) {
-                    let author_match: bool = author.is_none_or(|a: &str| p.author.as_deref() == Some(a));
+                    let author_match: bool =
+                        author.is_none_or(|a: &str| p.author.as_deref() == Some(a));
                     let tags_match: bool = tags.is_none_or(|search_tags: &[String]| {
                         p.tags.as_ref().is_some_and(|p_tags: &Vec<String>| {
                             search_tags.iter().all(|st: &String| p_tags.contains(st))
