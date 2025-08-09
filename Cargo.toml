@@ -1,6 +1,6 @@
 [package]
 name = "gfr"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 authors = ["Krishna Agarwal <kr1shna4garwal@proton.me>"]
 description = "A blazingly-fast, Rust tool for finding patterns in code, inspired by 'gf'."
