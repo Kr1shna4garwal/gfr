@@ -42,8 +42,8 @@ fn get_color_specs() -> ColorSpecs {
 const CONFIG_DIR: &str = "gfr";
 const INSTALLED_MANIFEST_FILE: &str = "installed.json";
 const DEFAULT_PATTERNS_URL: &str =
-    "https://raw.githubusercontent.com/Kr1shna4garwal/ghr-patterns/refs/heads/main/index.json";
-const DEFAULT_PATTERN_SCHEMA_URL: &str = "https://raw.githubusercontent.com/Kr1shna4garwal/ghr-patterns/refs/heads/main/schemas/pattern.schema.json";
+    "https://raw.githubusercontent.com/Kr1shna4garwal/gfr-patterns/refs/heads/main/index.json";
+const DEFAULT_PATTERN_SCHEMA_URL: &str = "https://raw.githubusercontent.com/Kr1shna4garwal/gfr-patterns/refs/heads/main/schemas/pattern.schema.json";
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
