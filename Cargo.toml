@@ -8,7 +8,7 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/Kr1shna4garwal/gfr"
 keywords = ["bugbountytools", "codesearch", "SAST", "tool"]
-categories = ["securitytool", "development-tools"]
+categories = ["development-tools", "command-line-utilities", "text-processing"]
 
 [dependencies]
 
